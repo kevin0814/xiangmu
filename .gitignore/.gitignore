@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+// var arr = [1,2,5,2,1,[1,2,4,6,7],[2,4,2,4]];
+// var map = {};
+// for(var i = 0; i < arr.length; i++){
+//     var ai = arr[i];
+//     if(!map[ai]){
+//         map[ai] = 1;
+//     }else{
+//         map[ai]++;
+//     }
+// }
+// console.log(map);
+// len =strlen(arr);
+// console.log(len);
+
+// for(var L1=0;L1<arr.length;L1++) {
+//     var newArr = arr[L1];// arrI is an array too.
+//     if(is_Array(newArr)){
+//         for(var $i=0;$i<newArr.length;$i++){
+//         	$n++;
+//         }
+//     }
+//     for(var L2=0; L2<newArr.length;L2++) {
+//         //do sth with L1, L2, arr[L1], newArr[L2];
+        
+//     }
+// }
+$arr=[{"shopId":"12345659","shopName":"张三自营店","childShopData":[{"shangpinId":"877db7f2e99b7e04a1f841fd8278ae35","dianName":"【帝创者】秋季新款2017男式休闲西装男装韩版修身小西装男士商务西装外套秋","time_deliver":"1","is_seven":"1","imgs":"/uploads/picture/20171204/1512372227210843.jpeg","goodsItem":[{"cost":"208.00","childrenShpName":"颜色:深蓝色;尺码:L","count":"1","lisId":"32322dd67985307285ebdc7794bc812b","time_deliver":"1","is_seven":"1"},{"cost":"208.00","childrenShpName":"颜色:黑色;尺码:XXL","count":"1","lisId":"b68f8a386633243d7bb9ed38874804af"},{"cost":"208.00","childrenShpName":"颜色:钻蓝色;尺码:M","count":"1","lisId":"0bce7a32e54bd816bab6e78689cb1bc9"}],"deliver_fee":"0.00"},{"shangpinId":"3245129e4d951c2d3997fe33f9013e86","dianName":"2017秋冬新款 欧美高端中长款绵羊皮衣修身显瘦收腰真皮皮衣女","time_deliver":"1","is_seven":"1","minbuycount":1,"imgs":"/uploads/picture/20171206/1512526571287775.jpeg","goodsItem":[{"cost":"3016.00","childrenShpName":"颜色:黑色;尺码:S","count":"1","lisId":"827e942210e1403bfe12709efac8e0ad"},{"cost":"3016.00","childrenShpName":"颜色:黑色;尺码:M","count":3,"lisId":"6ffa9a619dad4f151583edf0a84e0c84"}],"deliver_fee":"0.00"},{"shangpinId":"3f976613f17bfdf24d3d253f28a96cfd","dianName":"【柳斯舍】针织背心连衣裙2017新款女秋冬韩版百搭显瘦女士吊带毛衣打底裙潮","time_deliver":"1","is_seven":"1","minbuycount":1,"imgs":"/uploads/picture/20171206/1512536568592586.jpeg","goodsItem":[{"cost":"197.00","childrenShpName":"颜色:黑色;尺码:XXL","count":2,"lisId":"5341ac9c08c0bf062ef7a8a9398c7099"}],"deliver_fee":"0.00"},{"shangpinId":"dbe872e2d19e46b12c3ea301cb641a7d","dianName":" 2017冬短款丝绒棉衣女新款宽松加厚保暖大毛领棉袄外套","time_deliver":"1","is_seven":"1","minbuycount":1,"imgs":"/uploads/picture/20171206/1512525966188308.jpeg","goodsItem":[{"cost":"658.00","childrenShpName":"颜色:粉红色;尺码:M","count":"1","lisId":"0acc147e721a9400ee1372fdeda6e60c"}],"deliver_fee":"0.00"}]},{"shopId":"12345659","shopName":"李四自营店","childShopData":[{"shangpinId":"877db7f2e99b7e04a1f841fd8278ae35","dianName":"【帝创者】秋季新款2017男式休闲西装男装韩版修身小西装男士商务西装外套秋","time_deliver":"1","is_seven":"1","imgs":"/uploads/picture/20171204/1512372227210843.jpeg","goodsItem":[{"cost":"208.00","childrenShpName":"颜色:深蓝色;尺码:L","count":"1","lisId":"32322dd67985307285ebdc7794bc812b","time_deliver":"1","is_seven":"1"},{"cost":"208.00","childrenShpName":"颜色:黑色;尺码:XXL","count":"1","lisId":"b68f8a386633243d7bb9ed38874804af"},{"cost":"208.00","childrenShpName":"颜色:钻蓝色;尺码:M","count":"1","lisId":"0bce7a32e54bd816bab6e78689cb1bc9"}],"deliver_fee":"0.00"},{"shangpinId":"3245129e4d951c2d3997fe33f9013e86","dianName":"2017秋冬新款 欧美高端中长款绵羊皮衣修身显瘦收腰真皮皮衣女","time_deliver":"1","is_seven":"1","minbuycount":1,"imgs":"/uploads/picture/20171206/1512526571287775.jpeg","goodsItem":[{"cost":"3016.00","childrenShpName":"颜色:黑色;尺码:S","count":"1","lisId":"827e942210e1403bfe12709efac8e0ad"},{"cost":"3016.00","childrenShpName":"颜色:黑色;尺码:M","count":3,"lisId":"6ffa9a619dad4f151583edf0a84e0c84"}],"deliver_fee":"0.00"},{"shangpinId":"3f976613f17bfdf24d3d253f28a96cfd","dianName":"【柳斯舍】针织背心连衣裙2017新款女秋冬韩版百搭显瘦女士吊带毛衣打底裙潮","time_deliver":"1","is_seven":"1","minbuycount":1,"imgs":"/uploads/picture/20171206/1512536568592586.jpeg","goodsItem":[{"cost":"197.00","childrenShpName":"颜色:黑色;尺码:XXL","count":2,"lisId":"5341ac9c08c0bf062ef7a8a9398c7099"}],"deliver_fee":"0.00"},{"shangpinId":"dbe872e2d19e46b12c3ea301cb641a7d","dianName":" 2017冬短款丝绒棉衣女新款宽松加厚保暖大毛领棉袄外套","time_deliver":"1","is_seven":"1","minbuycount":1,"imgs":"/uploads/picture/20171206/1512525966188308.jpeg","goodsItem":[{"cost":"658.00","childrenShpName":"颜色:粉红色;尺码:M","count":"1","lisId":"0acc147e721a9400ee1372fdeda6e60c"}],"deliver_fee":"0.00"}]}];
+// var jsonObj=JSON.parse($arr1);
+// alert(typeof jsonObj);
+// arr=eval($arr);//庄户
+var n=0;
+for(var i=0;i<$arr.length;i++){
+	n++;
+	// console.log(arr[i]);
+	if($arr[i].childShopData instanceof Array){
+		 n--;
+		 //console.log($arr[i].childShopData);
+		for(var j=0;j<$arr[i].childShopData.length;j++){
+			n++;
+		}
+     
+	}
+    
+}
+console.log(n);
+// console.log(L1);
+// console.log(L1+L2);
+
+</script>	
+</html>
