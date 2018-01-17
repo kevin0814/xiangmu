@@ -1,0 +1,51 @@
+<script>
+   //瀑布流
+    //页码
+    ppage=1;
+    //请求标识
+    var isLoading=false;
+    //调用函数
+    requestgoods();
+    function requestgoods(){
+      //关闭请求
+      isLoading=true;
+      $.get("__MODULE__/Shares/fall",{p:ppage,cate_id:1},function(data){
+        // alert(data.length);
+        for(var i=0;i<data.length;i++){
+          // alert(i);
+          
+         
+        }
+        ppage++;
+        isLoading=false;
+      },'json')
+
+    }
+
+    $(document).scroll(function(){
+      //检测是否有请求标识
+      if(isLoading){return};
+      //获取文档高度
+      var dH=$(document).height();
+      //获取已滚动高度
+      var sH=$(document).scrollTop();
+      //获取可视高度
+      var vH=$(window).height();
+      if(sH+vH>dH-200){
+        requestgoods();
+      }
+    })
+
+</script>
+// 瀑布流
+	public function fall(){
+		$where['cate_id']=I('cate_id');
+		  //实例化
+        $mod=M('Childarticle1');
+        //获取数据总条数
+        $tot=$mod->where($where)->count();
+        $page=new \Think\Page($tot,8);
+        //获取当前页数据
+        $data=$mod->limit($page->firstRow,$page->listRows)->where($where)->select();
+        echo json_encode($data);
+	}
